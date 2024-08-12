@@ -26,8 +26,8 @@ def extract_frame(vid , img_name ,start_frame , end_frame , dest_folder):
 video = 'doom videos\doom e1m3 hurt me plenty.mp4'
 img_name = f"e1m3 "
 #|==================[duration]==================|
-start_frame = 1500
-end_frame = 2000
+start_frame = 2500
+end_frame = 3000
 #|==================[destination]==================|
 dest_folder = 'Doom-Enemy-Detector-DED-/Doom 1 episode 1/mission3'
 
