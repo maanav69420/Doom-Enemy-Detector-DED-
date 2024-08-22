@@ -22,14 +22,21 @@ def extract_frame(vid , img_name ,start_frame , end_frame , dest_folder):
     cam.release()
     cv.destroyAllWindows()
 
+def frame_count(vid):
+    cam = cv.VideoCapture(vid)
+    length = int(cam.get(cv.CAP_PROP_FRAME_COUNT))
+    print("Number of frames in '" + str(vid) + "' = " + str (length))
+
+
 #|==================[video + image name]==================|
-video = 'doom videos\doom e1m3 hurt me plenty.mp4'
-img_name = f"e1m3 "
+video = 'doom videos/doom e1m5 hurt me plenty.mp4'
+img_name = f"e1m5 "
 #|==================[duration]==================|
-start_frame = 5400
-end_frame = 5800
+start_frame = 500
+end_frame = 1500
 #|==================[destination]==================|
-dest_folder = 'Doom-Enemy-Detector-DED-/Doom 1 episode 1/mission3'
+dest_folder = 'Doom-Enemy-Detector-DED-/Doom 1 episode 1/mission5'
 
 #|==================[function call]==================|
 extract_frame(video , img_name ,start_frame , end_frame , dest_folder)
+# frame_count(video)
